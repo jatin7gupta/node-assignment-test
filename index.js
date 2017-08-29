@@ -6,11 +6,15 @@ const bodyParser = require('body-parser');
 
 const db = require('./seed');
 
+const path = require('path');
+
 app.use((req, res, next) => {
     console.log(req.url);
     console.log(req.method);
     next();
 });
+
+app.use('/', express.static(path.join(__dirname, '/public')));
 
 app.get('/api/todos/:status', (req, res) => {
     'use strict';
@@ -105,9 +109,7 @@ app.put('/api/todos/:id', (req, res) => {
     }
 });
 
-/*8. PUT /api/todos/complete/:id
-9. PUT /api/todos/active/:id
-*/
+
 app.put('/api/todos/:status/:id', (req, res) => {
     'use strict';
     const modId = req.params.id;
