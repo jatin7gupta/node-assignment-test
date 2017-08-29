@@ -77,11 +77,10 @@ app.post('/api/todos', (req, res) => {
     if (todoTitle === '' || todoTitle.trim() === '') {
         res.json('Invalid title', 400);
     } else {
-        const newTodoObject = {
+        db.DB[db.nextTodoID] = {
             title: req.body.title,
             status: db.status.Active
         };
-        db.DB[db.nextTodoID] = newTodoObject;
         db.nextTodoID += 1;
         res.send('Successfully added');
     }
@@ -103,6 +102,28 @@ app.put('/api/todos/:id', (req, res) => {
             todo.status = todoStatus;
         }
         res.json(todo);
+    }
+});
+
+/*8. PUT /api/todos/complete/:id
+9. PUT /api/todos/active/:id
+*/
+app.put('/api/todos/:status/:id', (req, res) => {
+    'use strict';
+    const modId = req.params.id;
+    const todo = db.DB[modId];
+    const status = req.params.status;
+    if (todo === undefined) {
+        res.json('Invalid Todo value', 400);
+    }
+    if (status === 'Active') {
+        db.DB[modId].status = db.status.Active;
+        res.json(todo);
+    } else if (status === 'Complete') {
+        db.DB[modId].status = db.status.Complete;
+        res.json(todo);
+    } else {
+        res.json('Invalid Status', 400);
     }
 });
 
