@@ -1,0 +1,18 @@
+{
+  "name": "todo-test",
+  "version": "1.0.0",
+  "description": "creating on my own to check the knowledge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jatin Gupta",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4"
+  },
+  "devDependencies": {
+    "eslint": "^4.5.0"
+  }
+}
