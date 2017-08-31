@@ -8,13 +8,12 @@
 <div class="container">
     <div class="jumbotron">
         <h1 class="display-3">Hello, Jatin!</h1>
-        <!--<button class="btn btn-primary "  onclick="getTodosAJAX()">Get todos</button>-->
         <p class="lead">Thank you for creating me, I will try to make your life easier!</p>
     </div>
     <div class="row">
         <div class=" card col-sm-6">
             <h1>Active Todos</h1>
-            <div id="todos_list_div">
+            <div id="activeTodoList">
 
             </div>
         </div>
@@ -28,7 +27,6 @@
             </div>
         </div>
     </div>
-
     <div class=" row">
         <div class="  col-sm-6">
             <div class="row">
@@ -36,8 +34,7 @@
                     Completed Todos
                 </a>
                 <div class="collapse" id="collapseExample">
-                    <div class="card card-body">
-                        1Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                    <div class="card card-body" id="completedTodoListId">
                     </div>
                 </div>
             </div>
@@ -49,8 +46,7 @@
                     Deleted Todos
                 </a>
                 <div class="collapse" id="collapseExample2">
-                    <div class="card card-body">
-                       2 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                    <div class="card card-body" id="deletedTodoListId">
                     </div>
                 </div>
             </div>
