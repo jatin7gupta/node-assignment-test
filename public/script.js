@@ -8,17 +8,24 @@ function addTodoElement(id, todoJsonData) {
     let todos = JSON.parse(todoJsonData);
     function createTodoElement(id, todoObject) {
         const todoElement = document.createElement('div');
+
         todoElement.innerText = todoObject.title;
         todoElement.setAttribute('dataId', id);
         todoElement.setAttribute('class', 'todoStatus'+todoObject.status);
-
         if (todoObject.status === 'Active') {
-            const completeButton = document.createElement('button');
-            completeButton.innerText = 'Mark as Complete';
-            completeButton.setAttribute('onclick', 'completeTodoAJAX('+id+')');
-            completeButton.setAttribute('class','btn btn-outline-primary btn-sm');
-            todoElement.appendChild(completeButton);
+            // const completeButton = document.createElement('button');
+            // completeButton.innerText = 'Mark as Complete';
+            // completeButton.setAttribute('onclick', 'completeTodoAJAX('+id+')');
+            // completeButton.setAttribute('class','btn btn-outline-primary btn-sm');
+            // todoElement.appendChild(completeButton);
+            // const labelCheckBox = document.createElement('label');
+            const inputCheckBox = document.createElement('input');
+            inputCheckBox.setAttribute('class', 'btn btn-success');
+            inputCheckBox.setAttribute('type', 'checkbox');
+            inputCheckBox.setAttribute('onclick', 'completeTodoAJAX('+id+')');
+            todoElement.insertBefore(inputCheckBox,todoElement.firstChild);
         }
+
         return todoElement;
     }
 
