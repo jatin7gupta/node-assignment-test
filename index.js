@@ -86,7 +86,7 @@ app.post('/api/todos', (req, res) => {
             status: db.status.Active
         };
         db.nextTodoID += 1;
-        res.send('Successfully added');
+        res.send(db.DB);
     }
 });
 
@@ -105,10 +105,9 @@ app.put('/api/todos/:id', (req, res) => {
         if (todoStatus && (todoStatus === db.status.Active || todoStatus === db.status.Complete)) {
             todo.status = todoStatus;
         }
-        res.json(todo);
+        res.json(db.DB);
     }
 });
-
 
 app.put('/api/todos/:status/:id', (req, res) => {
     'use strict';
@@ -133,4 +132,4 @@ app.get('/', (req, res) => {
    res.send('Hello world');
 });
 
-app.listen(3000);
+app.listen(3001);
