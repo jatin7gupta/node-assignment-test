@@ -8,6 +8,7 @@ const db = require('./seed');
 
 const path = require('path');
 
+//error handling needs to be done
 app.use((req, res, next) => {
     console.log(req.url);
     console.log(req.method);
@@ -79,7 +80,8 @@ app.post('/api/todos', (req, res) => {
         res.json('Invalid title', 400);
     }
     if (todoTitle === '' || todoTitle.trim() === '') {
-        res.json('Invalid title', 400);
+        //res.json('Invalid title', 400);
+        res.status(400).json('Invalid title');
     } else {
         db.DB[db.nextTodoID] = {
             title: req.body.title,

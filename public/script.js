@@ -87,7 +87,24 @@ function completeTodoAJAX(todoId) {
 }
 
 function addTodoAJAX() {
-
+    const newTodoTitle = document.getElementById('NEW_TODO_INPUT_ID').value;
+    document.getElementById('NEW_TODO_INPUT_ID').value = '';
+    const xhr = new XMLHttpRequest();
+    xhr.open('POST', '/api/todos', true);
+    xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+    const data = 'title=' + encodeURI(newTodoTitle);
+    xhr.onreadystatechange = () => {
+        'use strict';
+        if (xhr.readyState === RESPONSE_DONE) {
+           if (xhr.status === STATUS_OK) {
+               addTodoElement(xhr.responseText);
+           } else {
+               console.log(xhr.responseText);
+               console.log('error');
+           }
+        }
+    };
+    xhr.send(data);
 }
 
 window.onload = getTodosAJAX();
