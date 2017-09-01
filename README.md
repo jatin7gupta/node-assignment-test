@@ -4,15 +4,15 @@ This app was made to learn different aspect of Node, Express and some HTML and C
 
 ## Getting Started
 
-To install type "npm install" to install all the dependencies.
-Type "node index.js" to run the app.
-Find the UI at "http://localhost:4000/"
+* To install type "npm install" to install all the dependencies.
+* Type "node index.js" to run the app.
+* Find the UI at "http://localhost:4000/"
 
 
 ### Prerequisites
 
-Node
-Browser
+* Node
+* Browser
 
 
 
