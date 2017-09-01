@@ -115,7 +115,7 @@ app.put('/api/todos/:id', (req, res) => {
     const modId = req.params.id;
     const todo = db.DB[modId];
     if (todo === undefined) {
-        res.json('Invalid Todo value', 400);
+        res.status(400).json('Invalid Todo value');
     } else {
         const title = req.body.title;
         if (title && todo !== '' && title.trim() !== '') {
