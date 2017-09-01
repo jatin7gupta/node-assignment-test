@@ -21,7 +21,7 @@ function addTodoElement(todoJsonData) {
         if (todoObject.status === 'Active') {
             const completeButton = document.createElement('button');
             completeButton.innerText = 'Mark as Complete';
-            completeButton.setAttribute('onclick', 'completeTodoAJAX(' + id + ')');
+            completeButton.setAttribute('onclick', 'deteleTodoAJAX(' + id + ')');
              completeButton.setAttribute('class', 'close');
             completeButton.innerHTML = '&times';
             todoElement.appendChild(completeButton);
@@ -102,6 +102,25 @@ function addTodoAJAX() {
                console.log(xhr.responseText);
                console.log('error');
            }
+        }
+    };
+    xhr.send(data);
+}
+
+function deteleTodoAJAX(todoId) {
+    const xhr = new XMLHttpRequest();
+    const data = null;
+    xhr.open('DELETE', '/api/todos/' + todoId, true);
+    xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+    xhr.onreadystatechange = () => {
+        'use strict';
+        if (xhr.readyState === RESPONSE_DONE) {
+            if (xhr.status === STATUS_OK) {
+                addTodoElement(xhr.responseText);
+            } else {
+                console.log(xhr.responseText);
+                console.log('error');
+            }
         }
     };
     xhr.send(data);
