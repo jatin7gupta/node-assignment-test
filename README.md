@@ -20,6 +20,7 @@ This app was made to learn different aspect of Node, Express and some HTML and C
 * Add Todo : This section lets you add a todo (with status Active)
 * Completed Todos : This section displays completed todos. Clicking the checkbox makes the todo active (again). Clicking the red X deletes the todo.
 * Deleted Todos : Displays list of deleted todos
+* Used some design principles in UI making, like suitable color choice etc.
 
 ## Features Not Built
 * None
