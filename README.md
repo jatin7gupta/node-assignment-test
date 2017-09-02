@@ -14,7 +14,18 @@ This app was made to learn different aspect of Node, Express and some HTML and C
 * Node
 * Browser
 
+## Features Built
 
+* Active Todos : This section displays all active todos. Clicking the checkbox completes the todo. Clicking the red X deletes the todo.
+* Add Todo : This section lets you add a todo (with status Active)
+* Completed Todos : This section displays completed todos. Clicking the checkbox makes the todo active (again). Clicking the red X deletes the todo.
+* Deleted Todos : Displays list of deleted todos
+
+## Features Not Built
+* None
+
+## Known Issues
+* If we type a multi line TODO, then the delete button goes at the end of the TODO.
 
 ## Built With
 
