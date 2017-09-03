@@ -2,7 +2,7 @@
 
 This app was made to learn different aspect of Node, Express and some HTML and CSS.
 
-![Alt text](/screenshots/1.png?raw=true "Optional Title")
+![Alt text](https://imgur.com/a/IgVD8 "Optional title")
 
 ## Getting Started
 
