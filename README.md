@@ -8,6 +8,47 @@ This app was made to learn different aspect of Node, Express and some HTML and C
 * Type "node index.js" to run the app.
 * Find the UI at "http://localhost:4000/"
 
+## Using API's
+
+*  GET /api/todos
+        
+        Initial seed
+        {
+            "1":{"title":"todo 1","status":"Active"},
+            "2":{"title":"todo 2","status":"Active"},
+            "3":{"title":"todo 3","status":"Deleted"}
+        }
+        Status options :-
+                Active
+                Complete
+                Deleted
+        
+*  POST /api/todos
+
+        In JSON body send, and status will be set to Active
+  
+        { "title": "Todo Title" }
+        
+*  PUT /api/todos/:id
+        
+        In JSON body (optional)
+        { 
+            "title" : "Suitable title",
+            "status" : "Active/Complete/Deleted"
+        }
+        
+
+*  DELETE /api/todos:id
+
+All API's respond with the complete set of Todos as the response of the request.
+
+## Additional API's
+
+* GET /api/todos/Active - will provide all the Active Todos
+* GET /api/todos/Complete - will provide all the Complete Todos
+* GET /api/todos/deleted - will provide all the Deleted Todos
+* PUT /api/todos/Complete/:id - will mark the status as Complete of the todo with the requested id
+* PUT /api/todos/active/:id - will mark the status as Active of the todo with the requested id
 
 ### Prerequisites
 
@@ -23,10 +64,11 @@ This app was made to learn different aspect of Node, Express and some HTML and C
 * Used some design principles in UI making, like suitable color choice etc.
 
 ## Features Not Built
-* None
+* Implemented all the features as suggested by the instruction document
 
 ## Known Issues
 * If we type a multi line TODO, then the delete button goes at the end of the TODO.
+* Todo doesn't maintain time stamps
 
 ## Built With
 
