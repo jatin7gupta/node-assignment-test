@@ -2,7 +2,9 @@
 
 This app was made to learn different aspect of Node, Express and some HTML and CSS.
 
-![Alt text](https://imgur.com/a/IgVD8 "Optional title")
+<p align="center">
+<a href="http://tinypic.com?ref=21dhf6f" target="_blank"><img src="http://i66.tinypic.com/21dhf6f.jpg" border="0" alt="Image and video hosting by TinyPic"></a>
+</p>
 
 ## Getting Started
 
