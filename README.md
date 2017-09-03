@@ -6,7 +6,6 @@ This app was made to learn different aspect of Node, Express and some HTML and C
 <a href="http://tinypic.com?ref=qq1ely" target="_blank"><img src="http://i65.tinypic.com/qq1ely.png" border="0" alt="Image and video hosting by TinyPic"></a>
 </p>
 
-
 ## Getting Started
 
 * To install type "npm install" to install all the dependencies.
