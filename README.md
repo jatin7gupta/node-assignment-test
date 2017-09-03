@@ -46,9 +46,9 @@ All API's respond with the complete set of Todos as the response of the request.
 
 * GET /api/todos/Active - will provide all the Active Todos
 * GET /api/todos/Complete - will provide all the Complete Todos
-* GET /api/todos/deleted - will provide all the Deleted Todos
+* GET /api/todos/Deleted - will provide all the Deleted Todos
 * PUT /api/todos/Complete/:id - will mark the status as Complete of the todo with the requested id
-* PUT /api/todos/active/:id - will mark the status as Active of the todo with the requested id
+* PUT /api/todos/Active/:id - will mark the status as Active of the todo with the requested id
 
 ### Prerequisites
 
