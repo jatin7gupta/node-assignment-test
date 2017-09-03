@@ -6,7 +6,7 @@ This app was made to learn different aspect of Node, Express and some HTML and C
 <a href="http://imgur.com/a/IgVD8" target="_blank"><img src="http://imgur.com/a/IgVD8" border="0" alt="Image and video hosting by TinyPic"></a>
 
 </p>
-![Screenshot](1.png)
+
 
 ## Getting Started
 
