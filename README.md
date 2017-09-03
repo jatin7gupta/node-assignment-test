@@ -2,6 +2,8 @@
 
 This app was made to learn different aspect of Node, Express and some HTML and CSS.
 
+![Alt text](/screenshots/1.png?raw=true "Optional Title")
+
 ## Getting Started
 
 * To install type "npm install" to install all the dependencies.
