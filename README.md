@@ -1,6 +1,6 @@
 # Node Todo app Nagarro August 2017
 
-This app was made to learn different aspect of Node, Express and some HTML and CSS
+This app was made to learn different aspect of Node, Express and some HTML and CSS.
 
 ## Getting Started
 
@@ -44,11 +44,11 @@ All API's respond with the complete set of Todos as the response of the request.
 
 ## Additional API's
 
-* GET /api/todos/Active - will provide all the Active Todos
-* GET /api/todos/Complete - will provide all the Complete Todos
-* GET /api/todos/Deleted - will provide all the Deleted Todos
-* PUT /api/todos/Complete/:id - will mark the status as Complete of the todo with the requested id
-* PUT /api/todos/Active/:id - will mark the status as Active of the todo with the requested id
+* GET /api/todos/Active - will provide all the Active Todos.
+* GET /api/todos/Complete - will provide all the Complete Todos.
+* GET /api/todos/Deleted - will provide all the Deleted Todos.
+* PUT /api/todos/Complete/:id - will mark the status as Complete of the todo with the requested id.
+* PUT /api/todos/Active/:id - will mark the status as Active of the todo with the requested id.
 
 ### Prerequisites
 
@@ -58,17 +58,17 @@ All API's respond with the complete set of Todos as the response of the request.
 ## Features Built
 
 * Active Todos : This section displays all active todos. Clicking the checkbox completes the todo. Clicking the red X deletes the todo.
-* Add Todo : This section lets you add a todo (with status Active)
+* Add Todo : This section lets you add a todo (with status Active).
 * Completed Todos : This section displays completed todos. Clicking the checkbox makes the todo active (again). Clicking the red X deletes the todo.
-* Deleted Todos : Displays list of deleted todos
+* Deleted Todos : Displays list of deleted todos.
 * Used some design principles in UI making, like suitable color choice etc.
 
 ## Features Not Built
-* Implemented all the features as suggested by the instruction document
+* Implemented all the features as suggested by the instruction document.
 
 ## Known Issues
 * If we type a multi line TODO, then the delete button goes at the end of the TODO.
-* Todo doesn't maintain time stamps
+* Todo doesn't maintain time stamps.
 
 ## Built With
 
@@ -85,4 +85,4 @@ All API's respond with the complete set of Todos as the response of the request.
 
 ## License
 
-This project is licensed under the MIT License 
+This project is licensed under the MIT License.
